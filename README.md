@@ -93,8 +93,7 @@ Checks how many steps the Turing machine will take to halt. If it doesn't halt w
 
 ## Other Functionality
 
-### `next(object)`
-### `object() -> Turing`
+### `next(object)` / `object() -> Turing`
 Progresses the Turing machine by one step.
 
 ### `object[key]`
