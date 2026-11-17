@@ -21,7 +21,7 @@ class Turing():
         """A Turing machine.
         ﻿\t- *states: Each state of the Turing machine. In the format '(case0, case1, ..., caseBlank)'. Each case is in the format '(nextState, setValue, direction)'. In the caseBlank, setValue can be -1 for blank.
         ﻿\t- alphabet: The character to use for representing each cell value. The last character is for blank cells. The rest are in order (the first is for 0 cells, the second is for 1 cells, etc.). If there are excess characters, all but the first n-1 characters and the last character are discarded, where n is the number of possible cell values.
-        ﻿\t- tape: Initial tape. In the format of a list of values (True, False, or None), or in the format of a string ("1" for True, "0" for False, {blank} for None, any other character is ignored). Default [None].
+        ﻿\t- tape: Initial tape. In the format of a list of values (True, False, or None), or in the format of a string. Any character not in alphabet is ignored. Default [None].
         ﻿\t- pos: Initial position. Default 0.
         ﻿\t- shorten: Whether or not to strip excess blank cells automatically. Default False."""
         
