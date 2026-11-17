@@ -1,6 +1,6 @@
 # Turing
-A Turing machine.
-Class definition in [turing.py](/turing.py).
+A Turing machine class.\
+Class definition in [`turing.py`](/turing.py).
 
 
 
