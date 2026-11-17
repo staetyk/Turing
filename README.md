@@ -5,7 +5,7 @@ Class definition in [`turing.py`](/turing.py).
 
 
 ### `Turing(*states: StateType, alphabet: str = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_", tape: List[int] | str = [-1], pos: int = 0, shorten: bool = False) -> Turing`
-Initializes the Turing object.
+Initializes a `Turing` object.
 * `*states` - Each state of the Turing machine. In the format `(case0, case1, ..., caseBlank)`. Each case is in the format `(nextState, setValue, direction)`. In the `caseBlank`, `setValue` can be `-1` for blank.
 * `alphabet` - The character to use for representing each cell value. The last character is for blank cells. The rest are in order (the first is for `0` cells, the second is for `1` cells, etc.). If there are excess characters, all but the first `n-1` characters and the last character are discarded, where `n` is the number of possible cell values.
 * `tape` - Initial tape. In the format of a list of values (`True`, `False`, or `None`), or in the format of a string. Any character not in `alphabet` is ignored. Default `[None]`.
