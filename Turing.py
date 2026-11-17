@@ -26,7 +26,7 @@ class Turing():
         ﻿\t- shorten: Whether or not to strip excess blank cells automatically. Default False."""
         
         # Number of different possible cell values.
-        self.nums = len(states[0])
+        self.nums: int = len(states[0])
         try: assert len(alphabet) >= self.nums
         except: raise Exception("Not a long enough alphabet.")
         
